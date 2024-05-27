@@ -13,6 +13,11 @@
 
 body {
   background-color: var(--dark-grey);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 button {
