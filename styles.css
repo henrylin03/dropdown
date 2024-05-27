@@ -63,12 +63,19 @@ ul {
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
+}
+
+.option {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: var(--roundedness);
+  width: 100%;
   padding: 8px 15px;
 }
 
-.dropdown-options .option {
-  display: flex;
-  gap: 20px;
+.option:hover {
+  background-color: hsl(0, 0%, 95%);
 }
 
 .option figure {
