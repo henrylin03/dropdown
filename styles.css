@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+  --dark-grey: hsl(0, 0%, 15%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: var(--dark-grey);
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  outline: none;
+  background-color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+#language-selector {
+  --width: 230px;
+  --roundedness: 10px;
+  height: 80%;
+  margin: auto;
+}
+
+.language-selector-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: var(--roundedness);
+  padding: 8px 15px;
+  width: var(--width)
+}
+
+.dropdown .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.globe-icon {
+  width: 1.5rem;
+}
+
+.dropdown p {
+  flex: 5;
+  margin-bottom: 5px;
+}
+
+.dropdown-options {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  border-radius: var(--roundedness);
+  width: var(--width);
+  padding: 5px;
+}
+
+.dropdown-options.opened {
+  display: flex;
+}
+
+.option {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  border-radius: var(--roundedness);
+  width: 100%;
+  padding: 8px 10px;
+}
+
+.option:hover {
+  background-color: hsl(0, 0%, 93%);
+}
+
+.option figure {
+  width: 1.5rem;
+}
+
+.option p {
+  flex: 1;
+}
