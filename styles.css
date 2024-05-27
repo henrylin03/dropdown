@@ -35,14 +35,11 @@ ul {
 .dropdown {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: 3fr, repeat(2, 1fr);
 }
 
 .dropdown button {
   border-radius: var(--roundedness);
-  display: flex;
-  align-items: center;
-  gap: 20px;
   padding: 8px 20px;
   width: var(--width);
 }
