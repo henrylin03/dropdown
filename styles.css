@@ -59,7 +59,6 @@ ul {
 .dropdown-options {
   display: flex;
   flex-direction: column;
-  gap: 5px;
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
