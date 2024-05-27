@@ -47,6 +47,10 @@ ul {
   gap: 20px;
 }
 
+.dropdown p {
+  flex: 1;
+}
+
 .globe-icon {
   width: 1.5rem;
 }
@@ -62,4 +66,9 @@ ul {
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
+  padding: 8px 15px;
+}
+
+.dropdown-options .option {
+  text-align: center;
 }
