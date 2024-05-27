@@ -1,0 +1,20 @@
+{
+  "name": "dropdown",
+  "version": "1.0.0",
+  "description": "Reusable dropdown component to use in your next web app / website / project!",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henrylin03/dropdown"
+  },
+  "keywords": [],
+  "author": "Henry Lin <hello@henrylin.io> (http://henrylin.io)",
+  "bugs": {
+    "url": "https://github.com/henrylin03/dropdown/issues"
+  },
+  "license": "ISC",
+  "homepage": "https://github.com/henrylin03/dropdown"
+}
