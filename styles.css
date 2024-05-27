@@ -38,10 +38,6 @@ button {
   width: var(--width)
 }
 
-.dropdown figure {
-  height: auto;
-}
-
 .dropdown img {
   width: 2rem;
 }
