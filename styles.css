@@ -21,7 +21,10 @@ button {
   border: none;
   outline: none;
   background-color: white;
+}
 
+ul {
+  list-style-type: none;
 }
 
 #language-selector {
@@ -49,5 +52,6 @@ button {
 .dropdown-options {
   background-color: white;
   border-radius: var(--roundedness);
-  width: var(--width)
+  width: var(--width);
+  display: grid;
 }
