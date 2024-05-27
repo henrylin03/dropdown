@@ -17,5 +17,9 @@ export default function createDropdown({
   const toggleOptions = () => toggleBtnElement.classList.toggle("opened");
   const hideOptions = () => toggleBtnElement.classList.remove("opened");
 
+  // attach event listeners
+  toggleBtnElement.addEventListener(expandEventType, toggleOptions);
+  toggleBtnElement.addEventListener("blur", hideOptions);
+
   return;
 }
