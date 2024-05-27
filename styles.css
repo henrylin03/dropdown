@@ -17,7 +17,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
 }
 
 button {
@@ -35,6 +34,8 @@ ul {
 #language-selector {
   --width: 230px;
   --roundedness: 10px;
+  height: 80%;
+  margin: auto;
 }
 
 .language-selector-btn {
