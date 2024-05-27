@@ -1,3 +1,5 @@
+import "./assets/styles/global.css";
+
 const dropdownBtn = document.querySelector(".language-selector-btn");
 const dropdownOptionsContainer = document.querySelector(".dropdown-options");
 const dropdownOptions = document.querySelectorAll(".option");
