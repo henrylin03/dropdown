@@ -28,14 +28,14 @@ ul {
 }
 
 #language-selector {
-  --width: 200px;
+  --width: 230px;
   --roundedness: 10px;
 }
 
 .language-selector-btn {
   display: flex;
   align-items: center;
-  gap: 40px;
+  justify-content: space-between;
   border-radius: var(--roundedness);
   padding: 8px 15px;
   width: var(--width)
@@ -43,7 +43,6 @@ ul {
 
 .dropdown .left {
   display: flex;
-  align-items: center;
   gap: 20px;
 }
 
@@ -53,7 +52,6 @@ ul {
 
 .dropdown p {
   flex: 5;
-  margin-bottom: 3px;
 }
 
 .dropdown-options {
