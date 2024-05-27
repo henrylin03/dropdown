@@ -43,6 +43,7 @@ ul {
 
 .dropdown .left {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 
@@ -52,6 +53,7 @@ ul {
 
 .dropdown p {
   flex: 5;
+  margin-bottom: 5px;
 }
 
 .dropdown-options {
