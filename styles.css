@@ -32,7 +32,7 @@ ul {
   --roundedness: 10px;
 }
 
-.dropdown button {
+.language-selector-btn {
   display: flex;
   align-items: center;
   gap: 40px;
