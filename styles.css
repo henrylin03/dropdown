@@ -57,11 +57,15 @@ ul {
 }
 
 .dropdown-options {
-  display: flex;
+  display: none;
   flex-direction: column;
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
+}
+
+.dropdown-options.opened {
+  display: flex;
 }
 
 .option {
