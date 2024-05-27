@@ -23,10 +23,10 @@ button {
   padding: 10px;
 }
 
-.dropdown button figure {
+.dropdown figure {
   height: auto;
 }
 
-.dropdown button figure img {
+.dropdown img {
   width: 2rem;
 }
