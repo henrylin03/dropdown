@@ -62,6 +62,7 @@ ul {
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
+  padding: 5px;
 }
 
 .dropdown-options.opened {
@@ -74,7 +75,7 @@ ul {
   cursor: pointer;
   border-radius: var(--roundedness);
   width: 100%;
-  padding: 8px 15px;
+  padding: 8px 10px;
 }
 
 .option:hover {
