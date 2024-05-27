@@ -2,7 +2,6 @@
   "name": "dropdown",
   "version": "1.0.0",
   "description": "Reusable dropdown component to use in your next web app / website / project!",
-  "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,5 +15,9 @@
     "url": "https://github.com/henrylin03/dropdown/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/henrylin03/dropdown"
+  "homepage": "https://github.com/henrylin03/dropdown",
+  "devDependencies": {
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  }
 }
