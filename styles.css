@@ -32,11 +32,17 @@ ul {
   --roundedness: 10px;
 }
 
+.dropdown {
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
 .dropdown button {
   border-radius: var(--roundedness);
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   padding: 8px 20px;
   width: var(--width)
 }
@@ -53,5 +59,4 @@ ul {
   background-color: white;
   border-radius: var(--roundedness);
   width: var(--width);
-  display: grid;
 }
