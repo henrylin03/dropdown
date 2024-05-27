@@ -21,10 +21,7 @@ button {
   border: none;
   outline: none;
   background-color: white;
-}
 
-ul {
-  list-style-type: none;
 }
 
 #language-selector {
