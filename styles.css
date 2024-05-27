@@ -47,15 +47,12 @@ ul {
   gap: 20px;
 }
 
-.dropdown p {
-  flex: 1;
-}
-
 .globe-icon {
   width: 1.5rem;
 }
 
 .dropdown p {
+  flex: 5;
   margin-bottom: 3px;
 }
 
@@ -70,5 +67,14 @@ ul {
 }
 
 .dropdown-options .option {
-  text-align: center;
+  display: flex;
+  gap: 20px;
+}
+
+.option figure {
+  width: 1.5rem;
+}
+
+.option p {
+  flex: 1;
 }
