@@ -30,3 +30,7 @@ button {
 .dropdown img {
   width: 2rem;
 }
+
+.dropdown p {
+  margin-bottom: 3px;
+}
