@@ -33,16 +33,22 @@ ul {
 }
 
 .dropdown button {
-  border-radius: var(--roundedness);
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding: 8px 20px;
+  gap: 40px;
+  border-radius: var(--roundedness);
+  padding: 8px 15px;
   width: var(--width)
 }
 
-.dropdown img {
-  width: 2rem;
+.dropdown .left {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.globe-icon {
+  width: 1.5rem;
 }
 
 .dropdown p {
