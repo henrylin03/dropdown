@@ -21,15 +21,21 @@ button {
   border: none;
   outline: none;
   background-color: white;
-  border-radius: 10px;
-  width: 200px;
+
+}
+
+#language-selector {
+  --width: 200px;
+  --roundedness: 10px;
 }
 
 .dropdown button {
+  border-radius: var(--roundedness);
   display: flex;
   align-items: center;
   gap: 10px;
   padding: 8px 20px;
+  width: var(--width)
 }
 
 .dropdown figure {
@@ -46,5 +52,6 @@ button {
 
 .dropdown-options {
   background-color: white;
-  border-radius: 10px;
+  border-radius: var(--roundedness);
+  width: var(--width)
 }
