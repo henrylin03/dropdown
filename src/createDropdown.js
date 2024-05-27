@@ -1,9 +1,9 @@
 export default function createDropdown({
   toggleBtnSelector,
-  optionsSelector,
+  optionsSelector = "li.option",
   expandEvent,
-  replaceTextWithSelection,
-}) {
+  replaceTextWithSelection = false,
+} = {}) {
   // select
   const toggleBtnElement = document.querySelector(toggleBtnSelector);
   const optionsNodes = document.querySelectorAll(optionsSelector);
@@ -21,12 +21,15 @@ export default function createDropdown({
   // method
   const toggleOptions = () => toggleBtnElement.classList.toggle("opened");
   const hideOptions = () => toggleBtnElement.classList.remove("opened");
+  // const updateBtnTextWithChosenOption = (e) => e.target.querySelector
 
   // attach event listeners
   toggleBtnElement.addEventListener(expandEventType, toggleOptions);
   toggleBtnElement.addEventListener("blur", hideOptions);
 
-  return;
+  if (!replaceTextWithSelection) return { toggleOptions, hideOptions };
+
+  // optionsNodes.forEach(optionElement => optionElement.addEventListener("mousedown")
 }
 
 //todo: in docs, explain what each parameter means, expected values, and show examples!
