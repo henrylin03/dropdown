@@ -39,6 +39,8 @@ ul {
 }
 
 .dropdown button {
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
   border-radius: var(--roundedness);
   padding: 8px 20px;
   width: var(--width);
