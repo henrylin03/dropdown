@@ -1,0 +1,24 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  font: inherit;
+}
+
+.dropdown button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.dropdown button figure {
+  height: auto;
+}
+
+.dropdown button figure img {
+  width: 2rem;
+}
