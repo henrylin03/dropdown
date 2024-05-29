@@ -30,6 +30,7 @@ export default function createDropdown({
   toggleBtnElement.type = "button";
   toggleBtnElement.classList.add("language-picker-btn");
   toggleBtnElement.addEventListener(expandEventType, toggleOptionsDisplay);
+  toggleBtnElement.addEventListener("blur", hideOptions);
 
   const toggleBtnLeftContainer = document.createElement("div");
   toggleBtnLeftContainer.classList.add("left");
@@ -72,23 +73,6 @@ export default function createDropdown({
   languagePickerElement.appendChild(dropdownOptions);
 
   containerElement.appendChild(languagePickerElement);
-
-  // // methods
-  // const toggleOptions = () =>
-  //   optionsContainerElement.classList.toggle("opened");
-  // const hideOptions = () => optionsContainerElement.classList.remove("opened");
-  // const updateBtnTextWithChosenOption = (e) => {
-  //   const listElem = e.target.closest("li");
-  //   const chosenLanguage = listElem.querySelector("p").textContent;
-  //   currentLanguage.textContent = chosenLanguage;
-  // };
-  // // attach event listeners
-  // toggleBtnElement.addEventListener(expandEventType, toggleOptions);
-  // toggleBtnElement.addEventListener("blur", hideOptions);
-  // optionsNodes.forEach((option) =>
-  //   option.addEventListener("mousedown", updateBtnTextWithChosenOption)
-  // );
-  // return { toggleOptions, hideOptions };
 }
 
 //todo: in docs, explain what each parameter means, expected values, and show examples!
