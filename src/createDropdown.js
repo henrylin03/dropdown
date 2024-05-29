@@ -77,5 +77,3 @@ export default function createDropdown({
 //todo: in docs, explain what each parameter means, expected values, and show examples!
 
 // todo: function for generating button, and function for generating dropdown options
-
-//todo: do a picker demo with hover, one with click
