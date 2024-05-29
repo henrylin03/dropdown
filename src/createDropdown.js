@@ -58,9 +58,10 @@ export default function createDropdown({
     const languageText = document.createElement("p");
     languageText.textContent = language;
 
-    languageListItem.addEventListener("mousedown", () =>
-      updateBtnTextWithChosenLanguage(language)
-    );
+    languageListItem.addEventListener("mousedown", () => {
+      updateBtnTextWithChosenLanguage(language);
+      hideOptions();
+    });
 
     languageListItem.appendChild(left);
     languageListItem.appendChild(languageText);
