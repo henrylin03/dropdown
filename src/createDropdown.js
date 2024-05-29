@@ -13,6 +13,16 @@ export default function createDropdown({
   // container element is the parent of the language picker
   const containerElement = document.querySelector(containerElementCSSSelector);
 
+  // event handlers
+  const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
+  const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
+  const hideOptions = () => dropdownOptions.classList.remove("opened");
+  const updateBtnTextWithChosenOption = (e) => {
+    //   const listElem = e.target.closest("li");
+    //   const chosenLanguage = listElem.querySelector("p").textContent;
+    //   currentLanguage.textContent = chosenLanguage;
+  };
+
   // generate the language-picker
   const languagePickerElement = document.createElement("article");
   languagePickerElement.classList.add("language-picker");
@@ -20,6 +30,7 @@ export default function createDropdown({
   const toggleBtnElement = document.createElement("button");
   toggleBtnElement.type = "button";
   toggleBtnElement.classList.add("language-picker-btn");
+  toggleBtnElement.addEventListener(expandEventType, toggleOptionsDisplay);
 
   const toggleBtnLeftContainer = document.createElement("div");
   toggleBtnLeftContainer.classList.add("left");
@@ -58,11 +69,6 @@ export default function createDropdown({
   languagePickerElement.appendChild(dropdownOptions);
 
   containerElement.appendChild(languagePickerElement);
-
-  // attach event listeners
-  const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
-  const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
-  const hideOptions = () => dropdownOptions.classList.remove("opened");
 
   // // methods
   // const toggleOptions = () =>
