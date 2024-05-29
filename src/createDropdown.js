@@ -1,7 +1,7 @@
 export default function createDropdown({
-  toggleBtnSelector = ".dropdown .language-selector-btn",
-  toggleBtnTextSelector = ".current-language",
-  optionsContainerSelector = ".dropdown .dropdown-options",
+  toggleBtnSelector = "#language-selector .language-selector-btn",
+  toggleBtnTextSelector = "#language-selector .current-language",
+  optionsContainerSelector = "#language-selector .dropdown-options",
   expandEvent = "click",
 } = {}) {
   const toggleBtnElement = document.querySelector(toggleBtnSelector);
