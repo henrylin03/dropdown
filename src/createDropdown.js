@@ -17,10 +17,8 @@ export default function createDropdown({
   const expandEventType = expandEvent === "hover" ? "mouseover" : "mousedown";
   const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
   const hideOptions = () => dropdownOptions.classList.remove("opened");
-  const updateBtnTextWithChosenLanguage = (language) => {
-    const chosenLanguage = language;
-    currentLanguageDisplayed.textContent = chosenLanguage;
-  };
+  const updateBtnTextWithChosenLanguage = (language) =>
+    (currentLanguageDisplayed.textContent = language);
 
   // generate the language-picker
   const languagePickerElement = document.createElement("article");
@@ -30,7 +28,6 @@ export default function createDropdown({
   toggleBtnElement.type = "button";
   toggleBtnElement.classList.add("language-picker-btn");
   toggleBtnElement.addEventListener(expandEventType, toggleOptionsDisplay);
-  toggleBtnElement.addEventListener("blur", hideOptions);
 
   const toggleBtnLeftContainer = document.createElement("div");
   toggleBtnLeftContainer.classList.add("left");
@@ -71,6 +68,7 @@ export default function createDropdown({
   });
 
   languagePickerElement.appendChild(dropdownOptions);
+  languagePickerElement.addEventListener("mouseleave", hideOptions);
 
   containerElement.appendChild(languagePickerElement);
 }
