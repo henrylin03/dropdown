@@ -14,7 +14,7 @@ export default function createDropdown({
   const containerElement = document.querySelector(containerElementCSSSelector);
 
   // event handlers
-  const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
+  const expandEventType = expandEvent === "hover" ? "mouseover" : "mousedown";
   const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
   const hideOptions = () => dropdownOptions.classList.remove("opened");
   const updateBtnTextWithChosenOption = (e) => {
