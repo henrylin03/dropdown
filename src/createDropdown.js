@@ -1,7 +1,3 @@
-// #1: user should be able to decide option on whether dropdown is shown on hover or mouse over
-
-// #2: user needs to use the classes we ask for
-
 export default function createDropdown({
   toggleBtnSelector = ".dropdown .language-selector-btn",
   toggleBtnTextSelector = ".current-language",
