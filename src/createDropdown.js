@@ -3,12 +3,15 @@
 // #2: user needs to use the classes we ask for
 
 export default function createDropdown({
-  toggleBtnSelector = ".language-selector-btn",
-  optionsSelector = "li.option",
+  toggleBtnSelector = ".dropdown .language-selector-btn",
+  optionsContainerSelector = ".dropdown .dropdown-options",
   expandEvent = "click",
 } = {}) {
   const toggleBtnElement = document.querySelector(toggleBtnSelector);
-  const optionsNodes = document.querySelectorAll(optionsSelector);
+  const optionsContainerElement = document.querySelector(
+    optionsContainerSelector
+  );
+  const optionsNodes = optionsContainerElement.childNodes;
   const VALID_EXPAND_EVENTS = ["hover", "click", "mousedown"];
   if (!expandEvent || !VALID_EXPAND_EVENTS.includes(expandEvent))
     return console.error(
@@ -17,8 +20,9 @@ export default function createDropdown({
   const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
 
   // method
-  const toggleOptions = () => toggleBtnElement.classList.toggle("opened");
-  const hideOptions = () => toggleBtnElement.classList.remove("opened");
+  const toggleOptions = () =>
+    optionsContainerElement.classList.toggle("opened");
+  const hideOptions = () => optionsContainerElement.classList.remove("opened");
   const updateBtnTextWithChosenOption = (e) =>
     console.log(e.target.querySelector("p"));
 
@@ -30,8 +34,6 @@ export default function createDropdown({
   );
 
   return { toggleOptions, hideOptions };
-
-  // optionsNodes.forEach(optionElement => optionElement.addEventListener("mousedown")
 }
 
 //todo: in docs, explain what each parameter means, expected values, and show examples!
