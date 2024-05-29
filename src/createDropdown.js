@@ -1,10 +1,12 @@
+// #1: user should be able to decide option on whether dropdown is shown on hover or mouse over
+
+// #2: user needs to use the classes we ask for
+
 export default function createDropdown({
-  toggleBtnSelector,
+  toggleBtnSelector = ".language-selector-btn",
   optionsSelector = "li.option",
-  expandEvent,
-  replaceTextWithSelection = false,
+  expandEvent = "click",
 } = {}) {
-  // select
   const toggleBtnElement = document.querySelector(toggleBtnSelector);
   const optionsNodes = document.querySelectorAll(optionsSelector);
   const VALID_EXPAND_EVENTS = ["hover", "click", "mousedown"];
@@ -13,21 +15,21 @@ export default function createDropdown({
       "Please use a valid event type for expanding the dropdown. Valid events are 'hover', 'click', 'mousedown'."
     );
   const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
-  if (typeof replaceTextWithSelection != "boolean")
-    return console.error(
-      "Please ensure only boolean (true or false) value for the 'replaceTextWithSelector' option."
-    );
 
   // method
   const toggleOptions = () => toggleBtnElement.classList.toggle("opened");
   const hideOptions = () => toggleBtnElement.classList.remove("opened");
-  // const updateBtnTextWithChosenOption = (e) => e.target.querySelector
+  const updateBtnTextWithChosenOption = (e) =>
+    console.log(e.target.querySelector("p"));
 
   // attach event listeners
   toggleBtnElement.addEventListener(expandEventType, toggleOptions);
   toggleBtnElement.addEventListener("blur", hideOptions);
+  optionsNodes.forEach((option) =>
+    option.addEventListener("mousedown", updateBtnTextWithChosenOption)
+  );
 
-  if (!replaceTextWithSelection) return { toggleOptions, hideOptions };
+  return { toggleOptions, hideOptions };
 
   // optionsNodes.forEach(optionElement => optionElement.addEventListener("mousedown")
 }
