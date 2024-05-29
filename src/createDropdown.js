@@ -3,6 +3,13 @@ export default function createDropdown({
   languages = ["English"],
   expandEvent = "click",
 } = {}) {
+  // run checks
+  const VALID_EXPAND_EVENTS = ["hover", "click", "mousedown"];
+  if (!expandEvent || !VALID_EXPAND_EVENTS.includes(expandEvent))
+    return console.error(
+      "Please use a valid event type for expanding the dropdown. Valid events are 'hover', 'click', 'mousedown'."
+    );
+
   // container element is the parent of the language picker
   const containerElement = document.querySelector(containerElementCSSSelector);
 
@@ -53,25 +60,10 @@ export default function createDropdown({
   containerElement.appendChild(languagePickerElement);
 
   // attach event listeners
+  const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
+  const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
+  const hideOptions = () => dropdownOptions.classList.remove("opened");
 
-  // add language-picker to container element
-
-  // const toggleBtnElement = document.querySelector(
-  //   ".language-selector .language-selector-btn"
-  // );
-  // const currentLanguage = document.querySelector(
-  //   ".language-selector .current-language"
-  // );
-  // const optionsContainerElement = document.querySelector(
-  //   ".language-selector .dropdown-options"
-  // );
-  // const optionsNodes = optionsContainerElement.childNodes;
-  // const VALID_EXPAND_EVENTS = ["hover", "click", "mousedown"];
-  // if (!expandEvent || !VALID_EXPAND_EVENTS.includes(expandEvent))
-  //   return console.error(
-  //     "Please use a valid event type for expanding the dropdown. Valid events are 'hover', 'click', 'mousedown'."
-  //   );
-  // const expandEventType = expandEvent === "hover" ? "hover" : "mousedown";
   // // methods
   // const toggleOptions = () =>
   //   optionsContainerElement.classList.toggle("opened");
