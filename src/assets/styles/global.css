@@ -43,7 +43,7 @@ ul {
   align-items: center;
   justify-content: space-between;
   border-radius: var(--roundedness);
-  padding: 8px 15px;
+  padding: 13px 20px;
   width: var(--width)
 }
 
