@@ -17,10 +17,9 @@ export default function createDropdown({
   const expandEventType = expandEvent === "hover" ? "mouseover" : "mousedown";
   const toggleOptionsDisplay = () => dropdownOptions.classList.toggle("opened");
   const hideOptions = () => dropdownOptions.classList.remove("opened");
-  const updateBtnTextWithChosenOption = (e) => {
-    //   const listElem = e.target.closest("li");
-    //   const chosenLanguage = listElem.querySelector("p").textContent;
-    //   currentLanguage.textContent = chosenLanguage;
+  const updateBtnTextWithChosenLanguage = (language) => {
+    const chosenLanguage = language;
+    currentLanguageDisplayed.textContent = chosenLanguage;
   };
 
   // generate the language-picker
@@ -61,6 +60,10 @@ export default function createDropdown({
     const languageText = document.createElement("p");
     languageText.textContent = language;
 
+    languageListItem.addEventListener("mousedown", () =>
+      updateBtnTextWithChosenLanguage(language)
+    );
+
     languageListItem.appendChild(left);
     languageListItem.appendChild(languageText);
     dropdownOptions.appendChild(languageListItem);
@@ -91,3 +94,5 @@ export default function createDropdown({
 //todo: in docs, explain what each parameter means, expected values, and show examples!
 
 // todo: function for generating button, and function for generating dropdown options
+
+//todo: do a picker demo with hover, one with click
