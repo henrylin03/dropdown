@@ -1,13 +1,15 @@
 export default function createDropdown({
-  toggleBtnSelector = ".language-selector .language-selector-btn",
-  toggleBtnTextSelector = ".language-selector .current-language",
-  optionsContainerSelector = ".language-selector .dropdown-options",
+  languages = ["English"],
   expandEvent = "click",
 } = {}) {
-  const toggleBtnElement = document.querySelector(toggleBtnSelector);
-  const currentLanguage = document.querySelector(toggleBtnTextSelector);
+  const toggleBtnElement = document.querySelector(
+    ".language-selector .language-selector-btn"
+  );
+  const currentLanguage = document.querySelector(
+    ".language-selector .current-language"
+  );
   const optionsContainerElement = document.querySelector(
-    optionsContainerSelector
+    ".language-selector .dropdown-options"
   );
   const optionsNodes = optionsContainerElement.childNodes;
   const VALID_EXPAND_EVENTS = ["hover", "click", "mousedown"];
