@@ -31,14 +31,14 @@ ul {
   list-style-type: none;
 }
 
-#language-selector {
+.language-selector {
   --width: 230px;
   --roundedness: 10px;
   height: 80%;
   margin: auto;
 }
 
-#language-selector .language-selector-btn {
+.language-selector .language-selector-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,7 +47,7 @@ ul {
   width: var(--width)
 }
 
-#language-selector .left {
+.language-selector .left {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -57,7 +57,7 @@ ul {
   width: 1.5rem;
 }
 
-#language-selector p {
+.language-selector p {
   flex: 5;
   margin-bottom: 5px;
 }
