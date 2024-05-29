@@ -55,16 +55,19 @@ ul {
 
 .language-selector figure {
   width: 1.5rem;
+  height: 1.5rem;
 }
 
 .globe-icon {
   background-image: url("../icons/world.svg");
-  height: 1.5rem;
+}
+
+.chevron-icon {
+  background-image: url("../icons/chevron-down.svg")
 }
 
 .language-selector p {
   flex: 5;
-  margin-bottom: 5px;
 }
 
 .dropdown-options {
