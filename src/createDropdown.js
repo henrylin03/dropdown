@@ -22,6 +22,7 @@ export default function createDropdown({
 
   const currentLanguageDisplayed = document.createElement("p");
   currentLanguageDisplayed.classList.add("current-language");
+  currentLanguageDisplayed.textContent = languages[0];
 
   const chevronIcon = document.createElement("figure");
   chevronIcon.classList.add("chevron-icon");
