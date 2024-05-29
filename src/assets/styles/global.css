@@ -31,14 +31,14 @@ ul {
   list-style-type: none;
 }
 
-.language-selector {
+.language-picker {
   --width: 230px;
   --roundedness: 10px;
   height: 80%;
   margin: auto;
 }
 
-.language-selector .language-selector-btn {
+.language-picker .language-picker-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -47,13 +47,13 @@ ul {
   width: var(--width)
 }
 
-.language-selector .left {
+.language-picker .left {
   display: flex;
   align-items: center;
   gap: 20px;
 }
 
-.language-selector figure {
+.language-picker figure {
   width: 1.5rem;
   height: 1.5rem;
 }
@@ -66,7 +66,7 @@ ul {
   background-image: url("../icons/chevron-down.svg")
 }
 
-.language-selector p {
+.language-picker p {
   flex: 5;
 }
 
