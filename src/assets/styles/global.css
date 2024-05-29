@@ -53,8 +53,13 @@ ul {
   gap: 20px;
 }
 
-.globe-icon {
+.language-selector figure {
   width: 1.5rem;
+}
+
+.globe-icon {
+  background-image: url("../icons/world.svg");
+  height: 1.5rem;
 }
 
 .language-selector p {
@@ -86,10 +91,6 @@ ul {
 
 .option:hover {
   background-color: hsl(0, 0%, 93%);
-}
-
-.option figure {
-  width: 1.5rem;
 }
 
 .option p {
