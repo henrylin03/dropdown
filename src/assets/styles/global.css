@@ -34,8 +34,7 @@ ul {
 .language-picker {
   --width: 230px;
   --roundedness: 10px;
-  height: 80%;
-  margin: auto;
+  padding: 50px 0;
 }
 
 .language-picker .language-picker-btn {
