@@ -24,10 +24,10 @@
   ],
   "author": "Henry Lin <hello@henrylin.io> (http://henrylin.io)",
   "bugs": {
-    "url": "https://github.com/henrylin03/dropdown/issues"
+    "url": "https://github.com/henrylin03/language-picker/issues"
   },
   "license": "MIT",
-  "homepage": "https://github.com/henrylin03/dropdown",
+  "homepage": "https://github.com/henrylin03/language-picker",
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.0",
