@@ -11,3 +11,5 @@ Install the package using npm:
 ```bash
 npm install @henrylin03/language-picker
 ```
+
+## Usage
