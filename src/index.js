@@ -1,4 +1,3 @@
-import "./assets/styles/global.css";
 import createLanguagePicker from "./createLanguagePicker";
 
 const LANGUAGES = ["English", "简体中文", "繁體中文"];

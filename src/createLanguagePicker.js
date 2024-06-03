@@ -1,3 +1,5 @@
+import "./assets/styles/global.css";
+
 export default function createLanguagePicker({
   containerElementCSSSelector = "body",
   languages = ["English"],
