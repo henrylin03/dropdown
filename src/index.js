@@ -1,18 +1,18 @@
 import "./assets/styles/global.css";
-import createDropdown from "./createDropdown";
+import createLanguagePicker from "./createLanguagePicker";
 
 const LANGUAGES = ["English", "简体中文", "繁體中文"];
 
-const clickDropdownOptions = {
-  containerElementCSSSelector: "#click-dropdown",
+const clickOptions = {
   expandEvent: "click",
+  containerElementCSSSelector: "#click-dropdown",
   languages: LANGUAGES,
 };
-const hoverDropdownOptions = {
-  containerElementCSSSelector: "#hover-dropdown",
+const hoverOptions = {
   expandEvent: "hover",
+  containerElementCSSSelector: "#hover-dropdown",
   languages: LANGUAGES,
 };
 
-createDropdown(clickDropdownOptions);
-createDropdown(hoverDropdownOptions);
+createLanguagePicker(clickOptions);
+createLanguagePicker(hoverOptions);

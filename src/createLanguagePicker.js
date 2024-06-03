@@ -1,4 +1,4 @@
-export default function createDropdown({
+export default function createLanguagePicker({
   containerElementCSSSelector = "body",
   languages = ["English"],
   expandEvent = "click",
