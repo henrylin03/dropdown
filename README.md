@@ -94,3 +94,20 @@ createLanguagePicker( obj )
 #### Expanded
 
 ![Example dropdowns expanded](./docs/expanded.png)
+
+## Contributing
+
+Contributions are welcome! Please feel free to open an issue and/or submit a pull request on [GitHub](https://github.com/henrylin03/language-picker).
+
+## License
+
+This project is licensed under the MIT License.
+
+## Author
+
+Henry Lin: <https://henrylin.io>
+
+## Links
+
+* [GitHub repository](https://github.com/henrylin03/language-picker)
+* [Issues](https://github.com/henrylin03/language-picker/issues)
