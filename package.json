@@ -1,6 +1,7 @@
 {
   "name": "@henrylin03/language-picker",
   "version": "1.0.2",
+  "type": "module",
   "description": "JavaScript-generated UI dropdown for users to pick languages.",
   "main": "./src/createLanguagePicker.js",
   "scripts": {
