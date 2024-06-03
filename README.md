@@ -42,3 +42,55 @@ createLanguagePicker( obj )
 
   * **Valid values**: `"hover"`, `"click"`
   * If not provided, the dropdown will be expanded on a click event
+
+### Example
+
+#### HTML
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEMO</title>
+</head>
+<body>
+  <section id="hover-dropdown">
+    <h2>Hover dropdown</h2>
+  </section>
+  <section id="click-dropdown">
+    <h2>Click dropdown</h2>
+  </section>
+  
+  <script type="module">
+    import createDropdown from '@henrylin03/ui-dropdown';
+
+    const LANGUAGES = ["English", "简体中文", "繁體中文"];
+
+    const clickDropdownOptions = {
+      containerElementCSSSelector: "#click-dropdown",
+      expandEvent: "click",
+      languages: LANGUAGES,
+    };
+    const hoverDropdownOptions = {
+      containerElementCSSSelector: "#hover-dropdown",
+      expandEvent: "hover",
+      languages: LANGUAGES,
+    };
+
+    createDropdown(clickDropdownOptions);
+    createDropdown(hoverDropdownOptions);
+  </script>
+
+</body>
+</html>
+```
+
+#### Initial state
+
+![Example dropdowns not expanded](./docs/not-expanded.png)
+
+#### Expanded
+
+![Example dropdowns expanded](./docs/expanded.png)
